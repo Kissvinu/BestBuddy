@@ -1,0 +1,32 @@
+{
+  "name": "bestbuddy",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.3.0",
+    "angular-animate": "~1.4.6",
+    "angular-cookies": "^1.3.0",
+    "angular-css": "~1.0.7",
+    "angular-resource": "^1.3.0",
+    "angular-route": "^1.3.0",
+    "angular-sanitize": "^1.3.0",
+    "angular-touch": "^1.3.0",
+    "angular-ui-sortable": "~0.13.4",
+    "bootstrap-sass-official": "^3.2.0",
+    "font-awesome": ">=4.4.0",
+    "jquery-ui": "~1.11.4",
+    "lodash": "~3.10.1",
+    "underscore": "~1.8.3"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    }
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.3.0"
+  },
+  "appPath": "app",
+  "moduleName": "bestbuddyApp"
+}
