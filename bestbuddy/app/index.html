@@ -19,6 +19,8 @@
     <!-- genearl css -->
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+ <!--    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/shieldui-all.min.css" />
+ <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" /> -->
 
     <!-- end genearl css -->
   </head>
@@ -29,44 +31,10 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/login">BEst Buddy</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Best Buddies</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#/about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+   <ng-include src="'components/navbar.html'" scope="" onload=""></ng-include>
     </div>
     <div class="paddingleft">
     <div data-ng-view="" id="div-view" class="view-slide-in">
-        
     </div>
     </div>
      <footer class="text-center" id="hideFooter">
@@ -140,9 +108,18 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/angular-ui-scroll/dist/ui-scroll.js"></script>
+    <script src="bower_components/angular-ui-scrollpoint/dist/scrollpoint.js"></script>
+    <script src="bower_components/angular-ui-event/dist/event.js"></script>
+    <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
+    <script src="bower_components/angular-ui-validate/dist/validate.js"></script>
+    <script src="bower_components/angular-ui-indeterminate/dist/indeterminate.js"></script>
+    <script src="bower_components/angular-ui-uploader/dist/uploader.js"></script>
+    <script src="bower_components/angular-ui-utils/index.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/bootstrap-rating-input/build/bootstrap-rating-input.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -151,6 +128,13 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="components/filter.js"></script>
         <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/services/databaseservice.js"></script>
+        <script src="scripts/controllers/registartion.js"></script>
+        <script src="scripts/controllers/album.js"></script>
+        <script src="scripts/controllers/performance.js"></script>
+        <script src="scripts/controllers/timeline.js"></script>
+        <script src="scripts/controllers/tilesalbum.js"></script>
+        <script src="scripts/controllers/feedback.js"></script>
         <!-- endbuild -->
 </body>
 </html>

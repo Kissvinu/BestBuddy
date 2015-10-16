@@ -34,9 +34,39 @@ var app=angular
               templateUrl: 'views/login.html',
               controller: 'LoginCtrl'
             })
+            .when('/registartion', {
+              templateUrl: 'views/registartion.html',
+              controller: 'RegistartionCtrl',
+              controllerAs: 'registartion'
+            })
+            .when('/album', {
+              templateUrl: 'views/album.html',
+              controller: 'AlbumCtrl',
+              controllerAs: 'album'
+            })
+            .when('/performance', {
+              templateUrl: 'views/performance.html',
+              controller: 'PerformanceCtrl',
+              controllerAs: 'performance'
+            })
+            .when('/timeline', {
+              templateUrl: 'views/timeline.html',
+              controller: 'TimelineCtrl',
+              controllerAs: 'timeline'
+            })
+            .when('/tilesAlbum', {
+              templateUrl: 'views/tilesalbum.html',
+              controller: 'TilesalbumCtrl',
+              controllerAs: 'tilesAlbum'
+            })
+            .when('/feedback', {
+              templateUrl: 'views/feedback.html',
+              controller: 'FeedbackCtrl',
+              controllerAs: 'feedback'
+            })
             .otherwise({
                 redirectTo: '/'
             });
     }).factory('_', function() {
         return window._;
-    });;
+    });
