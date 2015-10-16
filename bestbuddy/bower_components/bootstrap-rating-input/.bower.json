@@ -23,7 +23,6 @@
     "commit": "b6c6dd197077e98b65652fce18605c56a34eb893"
   },
   "_source": "git://github.com/javiertoledo/bootstrap-rating-input.git",
-  "_target": "~0.3.0",
-  "_originalSource": "bootstrap-rating-input",
-  "_direct": true
+  "_target": "*",
+  "_originalSource": "bootstrap-rating-input"
 }
